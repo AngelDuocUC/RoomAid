@@ -1,0 +1,7 @@
+{
+  "name": "roomaid",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
