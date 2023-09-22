@@ -5,18 +5,129 @@
       Perfil
     </ion-title>
   </ion-toolbar>
-
+  
+  
 
 
 
 <ion-content [fullscreen]="true">
 
- 
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card class="hogarCard">
+    <ion-thumbnail>
+      <img alt="imgPerfil" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+    </ion-thumbnail>
+    <ion-card-header>
+      <ion-card-title>Nombre Usuario</ion-card-title>
+    </ion-card-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card-content>@nombreUsuario</ion-card-content>
+    <ion-card-content>"Descripcion de usuario"</ion-card-content>
+  </ion-card>
+
+  <ion-toolbar>
+    <ion-icon name="home"></ion-icon>
+    <ion-title size="large">Hogares</ion-title>
+  </ion-toolbar>
+  
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-card class="hogarCard">
+    <ion-card-header>
+      <ion-card-title>"Nombre Grupo"</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>Roomies</ion-card-content>
+    <ion-card-content>"Descripcion de usuario"</ion-card-content>
+    <ion-row class="ion-justify-content-start">
+        <ion-col size="1">
+          <ion-avatar>
+            <img
+              alt="Silhouette of a person's head"
+              src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            />
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="1">
+          <ion-avatar>
+            <img
+              alt="Silhouette of a person's head"
+              src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            />
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+    </ion-col>
+    
+    <ion-col>
+      <ion-card class="hogarCard">
+    <ion-card-header>
+      <ion-card-title>"Nombre Grupo"</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>Roomies</ion-card-content>
+    <ion-card-content>"Descripcion de usuario"</ion-card-content>
+    <ion-row class="ion-justify-content-start">
+        <ion-col size="1">
+          <ion-avatar>
+            <img
+              alt="Silhouette of a person's head"
+              src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            />
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="1">
+          <ion-avatar>
+            <img
+              alt="Silhouette of a person's head"
+              src="https://ionicframework.com/docs/img/demos/avatar.svg"
+            />
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+  </ion-card>
+    </ion-col>
+    
+  </ion-row>
+</ion-grid>
+
+<ion-toolbar>
+<ion-grid>
+  <ion-row>
+      <ion-col>
+        <ion-icon name="trophy"></ion-icon>
+      </ion-col>
+
+      <ion-col>
+        <ion-title size="large">Logros</ion-title>
+      </ion-col>
+
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-select aria-label="args" interface="popover" placeholder="Tiempo">
+              <ion-select-option value="arg1">arg1</ion-select-option>
+              <ion-select-option value="arg2">arg2</ion-select-option>
+              <ion-select-option value="arg3">arg3</ion-select-option>
+            </ion-select>
+          </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
+
+</ion-grid>
+</ion-toolbar>
+
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-title>Total de tareas realizadas</ion-card-title>
+    </ion-card-header>
+
+    <ion-progress-bar [buffer]="buffer" [value]="progress" color="success"></ion-progress-bar>
+    
+  </ion-card>
+
 </ion-content>
