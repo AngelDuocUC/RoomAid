@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab1',
@@ -12,7 +13,7 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
 export class Tab1Page {
   public buffer = 0.06;
   public progress = 0;
-  constructor() {
+  constructor(private router: Router) {
     setInterval(() => {
       this.buffer += 0.06;
       this.progress += 0.06;
@@ -27,4 +28,9 @@ export class Tab1Page {
       }
     }, 1000);
   }
+
+  HomePage() {
+  this.router.navigate(['/home']);
+}
+  
 }
