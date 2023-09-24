@@ -13,7 +13,9 @@ import { Router } from '@angular/router';
 export class Tab1Page {
   public buffer = 0.06;
   public progress = 0;
+
   constructor(private router: Router) {
+
     setInterval(() => {
       this.buffer += 0.06;
       this.progress += 0.06;
@@ -29,8 +31,10 @@ export class Tab1Page {
     }, 1000);
   }
 
+
   HomePage() {
   this.router.navigate(['/home']);
 }
   
 }
+
