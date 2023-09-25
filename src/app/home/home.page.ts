@@ -10,6 +10,8 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule]
 })
+
+
 export class HomePage implements OnInit {
 
   constructor() { }

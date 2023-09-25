@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [IonicModule, ExploreContainerComponent],
 })
+
+
 export class Tab1Page {
   public buffer = 0.06;
   public progress = 0;
