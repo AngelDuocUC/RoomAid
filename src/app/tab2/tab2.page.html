@@ -2,7 +2,7 @@
 
 <ion-toolbar>
   <ion-title>
-    <div class="logo-container">
+    <div class="tituloprincipal">
       <img src="../assets/icon/logo_morado.png" alt="Logo de la Aplicación" />
     </div>
     <div class="title-text">
@@ -13,54 +13,72 @@
 
 
 <ion-content [fullscreen]="true">
-  <ion-card class="hogarCard" (click)="HomePage()">
-    <ion-card-header>
-      <ion-row class="header-row">
-        <ion-icon name="home" class="home-icon"></ion-icon>
-        <ion-card-title class="custom-title">Nombre Hogar</ion-card-title>
-      </ion-row>
-    </ion-card-header>
-    
 
-    <ion-card-content class="titlecard"> Roomies </ion-card-content>
-
-    <ion-grid>
-      <ion-row class="ion-justify-content-start">
-        <ion-col size="1">
-          <div class="avatar-container">
-            <ion-avatar class="custom-avatar">
-              <img
-                alt="Silhouette of a person's head"
-                src="https://ionicframework.com/docs/img/demos/avatar.svg"
-              />
-            </ion-avatar>
-          </div>
-        </ion-col>
-        <ion-col size="1">
-          <div class="avatar-container">
-            <ion-avatar class="custom-avatar2">
-              <img
-                alt="Silhouette of a person's head"
-                src="https://ionicframework.com/docs/img/demos/avatar.svg"
-              />
-            </ion-avatar>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+  <ion-card (click)="HomePage()">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="home" class="home-icon"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <ion-row>
+              <ion-card-title>"Hogar"</ion-card-title>
+            </ion-row>
+            <ion-row>
+              Roomies
+            </ion-row>
+            <ion-row>
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="1">
+                    <ion-avatar class="avatar2">
+                      <img 
+                        alt="Silhouette of a person's head"
+                        src="https://ionicframework.com/docs/img/demos/avatar.svg"
+                      />
+                    </ion-avatar>
+                  </ion-col>
+                  <ion-col size="1">
+                    <ion-avatar class="avatar1">
+                      <img 
+                        alt="Silhouette of a person's head"
+                        src="https://ionicframework.com/docs/img/demos/avatar.svg"
+                      />
+                    </ion-avatar>
+                  </ion-col>
+                  <ion-col size="1">
+                    <ion-avatar class="avatar3">
+                      <img 
+                        alt="Silhouette of a person's head"
+                        src="https://ionicframework.com/docs/img/demos/avatar.svg"
+                      />
+                    </ion-avatar>
+                  </ion-col>
+                </ion-row>
+              </ion-grid> 
+            </ion-row>
+          </ion-col>
+          <ion-col class="ellipsis-col">
+            <ion-icon name="ellipsis-vertical"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
   </ion-card>
+  
 
 
-  <ion-card class="haceresCard">
+  <ion-card class="hogarCard">
     <div class="card-content">
       <div class="icon-title-container">
         <ion-icon name="home"></ion-icon>
         <ion-title size="large">Quehaceres</ion-title>
+        <ion-button class="tareasCard" (click)="goToTasks()"><ion-title> + Agregar</ion-title></ion-button>
       </div>
-      <ion-button class="custom-button">+ Agregar Tareas</ion-button>
     </div>
   </ion-card>
-
+  
   <ion-card class="tareasCard">
     <ion-chip class="juanchip">
       <ion-avatar>

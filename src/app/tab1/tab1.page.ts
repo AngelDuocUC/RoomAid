@@ -11,23 +11,55 @@ import { Router } from '@angular/router';
   imports: [IonicModule, ExploreContainerComponent],
 })
 
-
 export class Tab1Page {
-  public buffer = 0.06;
-  public progress = 0;
+  // Barras de progreso para la primera métrica
+  public buffer1 = 0.06;
+  public progress1 = 0;
+
+  // Barras de progreso para la segunda métrica
+  public buffer2 = 0.12;
+  public progress2 = 0;
+
+  // Barras de progreso para la tercera métrica
+  public buffer3 = 0.18;
+  public progress3 = 0;
 
   constructor(private router: Router) {
-
+    // Función para actualizar la primera métrica
     setInterval(() => {
-      this.buffer += 0.06;
-      this.progress += 0.06;
+      this.buffer1 += 0.06;
+      this.progress1 += 0.06;
 
-      // Reset the progress bar when it reaches 100%
-      // to continuously show the demo
-      if (this.progress > 1) {
+      if (this.progress1 > 1) {
         setTimeout(() => {
-          this.buffer = 0.06;
-          this.progress = 0;
+          this.buffer1 = 0.06;
+          this.progress1 = 0;
+        }, 1000);
+      }
+    }, 1000);
+
+    // Función para actualizar la segunda métrica
+    setInterval(() => {
+      this.buffer2 += 0.06;
+      this.progress2 += 0.06;
+
+      if (this.progress2 > 1) {
+        setTimeout(() => {
+          this.buffer2 = 0.06;
+          this.progress2 = 0;
+        }, 1000);
+      }
+    }, 1000);
+
+    // Función para actualizar la tercera métrica
+    setInterval(() => {
+      this.buffer3 += 0.06;
+      this.progress3 += 0.06;
+
+      if (this.progress3 > 1) {
+        setTimeout(() => {
+          this.buffer3 = 0.06;
+          this.progress3 = 0;
         }, 1000);
       }
     }, 1000);

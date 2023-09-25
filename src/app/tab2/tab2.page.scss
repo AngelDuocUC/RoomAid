@@ -1,89 +1,72 @@
 ion-toolbar,ion-content {
-    --background: #E7EDFF;
-    --color: #7085FF;
+  --background: #E7EDFF;
+  --color: #7085FF;
+}
+
+ion-title.tituloprincipal {
+  text-align: center; 
+  font-size: 1.5rem; 
+  width: 100%; 
 }
 
 ion-title{
-    font-family: 'Tw Cen MT Std', sans-serif;
-    font-weight: 600;
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ellipsis-col {
+margin-left: 100px;
 }
 
 
 
-.header-row {
-    display: flex;
-    align-items: center;
-  }
-  
-  .home-icon {
-    font-size: 24px; /* Tamaño del icono ajustable según tus preferencias */
-    margin-right: 10px; /* Espacio entre el icono y el texto (ajusta según sea necesario) */
-    border: 2px solid  #7085FF; /* Agrega un borde cuadrado de 2px alrededor del icono */
-    border-radius: 10px;
-    padding: 5px; /* Añade espacio entre el icono y el borde (ajusta según sea necesario) */
-  }
-  
-  .custom-title {
-    font-size: 1.2rem; /* Tamaño del texto ajustable según tus preferencias */
-    margin: 0;
-  }
-  
-
+.home-icon {
+  font-size: 100px; 
+  margin-right: 10px;
+  border: 2px solid  #7085FF; 
+  border-radius: 10px;
+  padding: 5px; 
+}
 
 
 .logo-container {
-    flex: 0 0 auto; /* No crece ni se encoge, tamaño fijo */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px; /* Espacio entre el logo y el título (ajusta según sea necesario) */
-    width: 200px; /* Ocupa todo el ancho disponible */
-    height: 100px;
-}
-
-.title-text {
-    flex: 1; /* Toma todo el espacio restante horizontalmente */
-    text-align: center; /* Centra el texto horizontalmente */
-}
-.card-content {
+  flex: 0 0 auto; 
   display: flex;
-  align-items: center; /* Centra verticalmente */
-  justify-content: space-between; /* Espacio igual entre los elementos */
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; 
+  width: 200px; 
+  height: 100px;
 }
 
 
-ion-card-title.custom-title{
-    font-size: 30px; 
-    font-family: 'Tw Cen MT Std', sans-serif;
-    font-weight: 600; /* Ajusta el grosor (negrita) */
-    color: #7085FF
+ion-card-title{
+  font-size: 20px; 
+  font-family: 'Tw Cen MT Std', sans-serif;
+  font-weight: 600; 
+  color: #7085FF;
+  text-align: left;
 
 }
 
-.avatar-container {
-    position: relative;
-}
-  
-ion-avatar.custom-avatar{
-    width: 50px; /* Ajusta el ancho del avatar según sea necesario */
-    height: 50px;
-    right: -10px; /* Ajusta la cantidad de desplazamiento hacia la derecha según sea necesario */
-    top: 0; /* Ajusta la posición vertical según sea necesario */
+.hogarCard{
+  padding: 10px;
 }
 
-ion-avatar.custom-avatar2{
-    width: 50px; /* Ajusta el ancho del avatar según sea necesario */
-    height: 50px;
-   
-}
-
-/* Cards */
-
-.card-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ion-thumbnail {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 5%; 
+    overflow: hidden; 
   }
+  
+  ion-thumbnail img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+
   
   .icon-title-container {
     display: flex;
@@ -91,8 +74,8 @@ ion-avatar.custom-avatar2{
   }
   
   ion-icon {
-    font-size: 24px; /* Tamaño del icono ajustable según tus preferencias */
-    margin-right: 2px; /* Espacio entre el icono y el texto (ajusta según sea necesario) */
+    font-size: 24px; 
+    margin-right: 2px; 
   }
   
   .custom-button {
@@ -100,7 +83,7 @@ ion-avatar.custom-avatar2{
     font-family: Arial, sans-serif;
     max-width: 150px;
     font-family: 'Tw Cen MT Std', sans-serif;
-    font-weight: 600; /* Ajusta el grosor (negrita) */
+    font-weight: 600; 
     --background: #FFFFFF;
     --color: #7085FF;
     padding: 6 6px;
@@ -112,42 +95,13 @@ ion-card  {
     --color: #7085FF;
 }
 
-.tareasCard{
-    
-    --background: #FFFFFF;
-    --color: #7085FF;
 
+ion-avatar{
+  width: 25px; 
+  height: 25px;
+ 
 }
 
-.nombreroomie{
-    color:#FFFFFF; 
-    
-  }
-
-.juanchip{
-    --background: #7085FF;
-}
-
-.sarachip{
-    --background: #E36F5C;
-}
-
-.miguelchip{
-    --background: #34AD7F;
-}
-
-
-
-
-ion-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-ion-chip {
-  margin-bottom: 0; /* Elimina el margen inferior del chip */
-}
 
 ion-col {
   flex: 1;
@@ -155,19 +109,43 @@ ion-col {
 }
 
 h1 {
-  font-size: 1rem; /* Tamaño del texto ajustable según tus preferencias */
-  margin: 0; /* Elimina el margen por defecto del h1 */
+  font-size: 1rem; 
+  margin: 0; 
   font-family: 'Tw Cen MT Std', sans-serif;
-font-weight: 600; /* Ajusta el grosor (negrita) */
+font-weight: 600; 
   color: #7085FF;
 }
 
 .titlecard{
     font-size: 5 rem; 
     font-family: 'Tw Cen MT Std', sans-serif;
-    font-weight: 600; /* Ajusta el grosor (negrita) */
-    margin: 0; /* Elimina el margen por defecto del h1 */
+    font-weight: 600; 
+    margin: 0; 
     color: #7085FF;
+}
+
+.tareasCard{
+    
+  --background: #FFFFFF;
+  --color: #7085FF;
+
+}
+
+.nombreroomie{
+  color:#FFFFFF; 
+  
+}
+
+.juanchip{
+  --background: #7085FF;
+}
+
+.sarachip{
+  --background: #E36F5C;
+}
+
+.miguelchip{
+  --background: #34AD7F;
 }
 
 .urgentechip{

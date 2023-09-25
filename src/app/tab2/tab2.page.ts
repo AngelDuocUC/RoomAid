@@ -18,4 +18,8 @@ export class Tab2Page {
   HomePage() {
   this.router.navigate(['/home']);
 }
+  goToTasks() {
+  this.router.navigate(['/tasks']);
+}
+
 }
